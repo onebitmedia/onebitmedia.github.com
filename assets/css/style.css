@@ -1,0 +1,328 @@
+/*** GENERAL
+--------------------------------------------------------------------------------------- */
+@charset "utf-8";
+@font-face {
+    font-family: "Kontrapunkt-Bold";
+    src: url("../font/Kontrapunkt-Bold.otf") format('truetype');
+}
+@font-face {
+    font-family: "Kontrapunkt-Light";
+    src: url("../font/Kontrapunkt-Light.otf") format('truetype');
+}
+@font-face {
+    font-family: "Kontrapunkt-LightItalic";
+    src: url("../font/Kontrapunkt-LightItalic.otf") format('truetype');
+}
+	
+body {
+    background-color: #ffffff;
+    color: #969696;
+    font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: normal !important;
+}
+img {border:0;}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.container{width:940px;margin:0 auto;padding:0 0 20px 0;}
+.header{position:fixed;width:940px;height:165px;top:0;background:#ffffff;z-index:10;}
+.logo{
+	background-image: url(../img/backgroundlogo.png);
+	background-position:2px 15px;
+	width:221px;
+	height:142px;
+    cursor: pointer;
+	float:left;
+	margin-top:40px;
+}
+.menu{
+	list-style: none;
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:15px;
+	color:#4d4d4d;
+	margin-left:230px;
+	margin-top:85px;
+	padding:0;
+}
+.menu li{
+  display:inline;
+  padding-right:30px;
+}
+.menu a{
+  display:inline-block;
+  padding:10px;
+  color:#4d4d4d;
+  text-decoration:none;
+}
+.menu a:hover{
+  text-decoration:underline;
+}
+.line{
+	margin-left:240px;
+	border-bottom:1px solid #c40085;
+	margin-top:-2px;
+}
+.line-2{
+	border-bottom:1px solid #ffd200;
+	margin-bottom: -50px;
+}
+.line-3{
+	border-bottom:1px solid #4d4d4d;
+}
+.line-4{
+	border-bottom:1px solid #00ccff;
+}
+.line-5{
+	border-bottom:1px solid #dfdfdf;
+}
+
+.content{margin: 200px 0 0 240px;}
+.section{margin: 100px 0;}
+
+#landingpage h1{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:97px;
+	margin-bottom:50px;
+	color:#4d4d4d;
+}
+#landingpage p{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	color:#969696;
+	font-size:33px;
+}
+#landingpage .yourbrand {color:#00ccff;font-size:33px;}
+
+#about h2{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:44px;
+	margin-bottom:50px;
+	color:#4d4d4d;
+}
+#about p{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	color:#969696;
+	font-size:15px;
+	line-height: 35px;
+}
+#about .tab{
+	float:left;
+	width:220px;
+	margin-right:10px;
+}
+#about .tab .prefecto{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	color:#140404;
+}
+
+#team h2{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:44px;
+	margin-bottom:100px;
+	color:#4d4d4d;
+}
+#team .divisi{margin-bottom:50px;}
+#team .tab{
+	float:left;
+	width:220px;
+	margin-right:10px;
+}
+#team .tab .name{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:18px;
+	color:#4d4d4d;
+	display:block;
+	margin-top:20px;
+	margin-left:30px;
+}
+#team .tab .occupt{
+	font-family: "Kontrapunkt-LightItalic",Verdana,Arial,Helvetica,sans-serif;
+	font-size:18px;
+	color:#4d4d4d;
+	display:block;
+	margin-left:30px;
+}
+#team .tab .twitter{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:18px;
+	color:#00ccff;
+	display:block;
+	margin-left:30px;
+}
+
+#service{
+	background-image: url(../img/service.png);
+	width:147px;
+	height:147px;
+	background-position: 0 150px; 
+}
+
+#whatwedo h2{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:44px;
+	margin-bottom:50px;
+	color:#4d4d4d;
+}
+#whatwedo img{
+	margin-bottom:80px;
+}
+#whatwedo .support{
+	float:left;
+}
+#whatwedo .text{
+	float:left;
+	ont-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	color:#4d4d4d;
+	font-size:30px;
+	margin-left:30px;
+	margin-top:-40px;
+	width:290px;
+	line-height: 40px;
+}
+#whatwedo .line{
+	width:290px;
+	border-bottom:1px solid #c9c9c9;
+	margin:0;
+}
+#whatwedo .see{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	color:#00ccff;
+	font-size:30px;
+	margin:10px 0 15px 0;
+	background: transparent url(../img/arrow.png) no-repeat right center;
+	cursor:pointer;
+}
+#whatwedo .see a{
+	color:#00ccff;
+	text-decoration:none;
+}
+#whowedo h2{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:44px;
+	margin-bottom:50px;
+	color:#4d4d4d;
+}
+
+#contact h2{
+	font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;
+	font-size:44px;
+	margin-bottom:50px;
+	color:#4d4d4d;
+}
+#contact p{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	color:#969696;
+	font-size:33px;
+}
+#contact .areyou {font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;color:#0b0303;font-size:33px;}
+#contact .pekeus {font-family: "Kontrapunkt-Bold",Verdana,Arial,Helvetica,sans-serif;color:#00ccff;font-size:33px;}
+
+
+/*** WORK
+--------------------------------------------------------------------------------------- */
+#mobile .contentapps:first-child, #web .contentapps:first-child, #games .contentapps:first-child{
+	padding-top:0px;
+	padding-bottom:30px;
+	border-bottom:1px solid #00ccff;
+}
+
+#mobile .contentapps, #web .contentapps, #games .contentapps{
+	padding-top:100px;
+	padding-bottom:30px;
+	border-bottom:1px solid #00ccff;
+}
+
+#mobile .contentapps h2, #web .contentapps h2, #games .contentapps h2{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:55px;
+	color:#4d4d4d;
+	margin-bottom:0;
+	line-height: normal !important;
+}
+#mobile .contentapps .desc, #web .contentapps .desc, #games .contentapps .desc{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:33px;
+	color:#969696;
+}
+#mobile .contentapps .imgbig, #web .contentapps .imgbig, #games .contentapps .imgbig{
+	float:left;
+}
+#mobile .contentapps .showcase, #web .contentapps .showcase, #games .contentapps .showcase{
+	float:right;
+	margin-top:130px;
+	cursor:pointer;
+}
+#mobile .contentapps .download, #web .contentapps .download, #games .contentapps .download{
+	float:right;
+	margin-top:50px;
+	cursor:pointer;
+}
+
+
+.footer{
+	background-image: url(../img/footerline.png);
+	width:700px;
+	height:7px;
+	float:right;
+	margin:20px 0 30px 0;
+}
+
+
+.carousel {
+    float: left;
+    width: 481px;
+    height:400px;
+}
+
+.carousel-control.right {
+    left: auto;
+    right: 200px;
+}
+.carousel-control {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+    height: 10px;
+    left: 195px;
+    line-height: 30px;
+    margin-top: -20px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    width: 10px;
+}
+.plus{top:85%;left: 200px;}
+.video{margin-top:20px;}
+.black{color:#000000;}
+.popup{top:100%;left: 200px;}
+.popuptinggi{height:380px;}
+.popupright{top:100%;right: 130px !important;}
+.poph2{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:33px;
+	color:#3f3e3e;
+	padding-bottom:20px;
+	line-height: normal !important;
+	border-bottom:1px solid #dfdfdf;
+}
+.popdesc{
+	font-family: "Kontrapunkt-Light",Verdana,Arial,Helvetica,sans-serif;
+	font-size:18px;
+	color:#969696;
+	line-height:35px;
+	padding-top:20px;
+}
